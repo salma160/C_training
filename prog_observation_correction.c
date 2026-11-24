@@ -3,13 +3,20 @@
 int main(void){
 	
 	int recu,age = -1;
+	
 	char initiale;
 	
 	printf("Age : ");
+	
 	recu=scanf("%d", &age);
+	
 	printf("Initiale : ");
-	getchar(); /*pour récupérer le \n de trop dû à l'entrée de age ( le buffer contient \n d'abord)*/
-	scanf("%c",&initiale);
+	
+	/*getchar(); pour récupérer le \n de trop dû à l'entrée de age ( le buffer contient \n d'abord)*/
+	
+	scanf(" %c",&initiale);/* plus aucune utilité à utiliser getchar() car l'esxpace au debut dans scanf lui indique d'ignorer le \n(u caractère blanc en G) 
+							à l'entrée du buffer. c'est plus court. ça revient au même*/
+	
 	printf("nombre d'elements recus=%d, age = %d, code de initiale et son symbole = %d,%c\n ", recu,age, initiale,initiale);	
 	
 	

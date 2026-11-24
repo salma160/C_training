@@ -6,7 +6,7 @@ int main(void){
 	
 	int produit_quantite;
 	
-	const double TVA = 0.1;
+	double const TVA = 0.2;
 	
 	
 	printf("Prix unitaire en DH:");
@@ -23,15 +23,15 @@ int main(void){
 	
 	TotalTTC= TVA_amount+TotalHT;
 	
-	printf(" Prix unitaire HT :%8.2f DH\n",prixHT);
+	printf("%-17s %c%8.2f %s\n","Prix unitaire HT",':',prixHT,"DH");
 	
-	printf(" Quantite         :%8d\n",produit_quantite);
+	printf("%-17s %c%8d\n","Quantite", ':' ,produit_quantite);
 	
-	printf(" Total HT         :%8.2f DH\n", TotalHT);
+	printf("%-17s %c%8.2f %s","Total HT",':',TotalHT, "DH\n");
 	
-	printf(" TVA (20%%)        :%8.2f DH\n",TVA_amount);
+	printf("%-17s %c%8.2f %s","Total TTC", ':',TVA_amount, "DH\n");
 	
-	printf(" Total TTC        :%8.2f DH",TotalTTC);
+	printf("%-17s %c%8.2f %s","Total TTC",':',TotalTTC, "DH\n");
 	
 	
 	

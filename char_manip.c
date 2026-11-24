@@ -18,6 +18,12 @@ int main(void){
 	printf("\nSuivant :%c",c+1);
 	
 	printf("\nMajuscule :%c",toupper(c));
+	/* 
+	ou encore:
+
+	c=c-('a'-'A') qui est egale à c= c-'a' + 'A'
+
+	*/
 	
 	
 	
